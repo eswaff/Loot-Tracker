@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+    <input type = "image" src = "Blade.png" onclick = lootGet(1,1) oncontextmenu="lootGet(-1,1);return false;"> </input>
+    <input type = "image" src = "Necklace.png" onclick = lootGet(1,2) oncontextmenu="lootGet(-1,2);return false;"> </input>
+    <input type = "image" src = "Boots.png" onclick = lootGet(1,3) oncontextmenu="lootGet(-1,3);return false;"> </input>
+    <input type = "image" src = "Goblet.png" onclick = lootGet(1,4) oncontextmenu="lootGet(-1,4);return false;"> </input>
+    <input id = "sinciro" type = "image" src="sinciro.png">  </input>
+
+    <div class = "fuseButtons">
+      <button onclick = fuseSinciro(1)> 1 </button>
+      <button onclick = fuseSinciro(2)> 2 </button>
+      <button onclick = fuseSinciro(3)> 3 </button>
+      <button onclick = fuseSinciro(4)> 4 </button>
+    </div>
+    <div id="numbers">
+      <pre id = "bladeNum">0</pre>
+      <pre id = "necklaceNum">0</pre>
+      <pre id = "bootsNum">0</pre>
+      <pre id = "gobletNum">0</pre>
+    </div>
+    
+    <input id = "octrice" type = "image" src="Octrice.png" onclick = "lootGet(1,1); lootGet(1,2);">  </input>
+    <input id = "congregant" type = "image" src="Congregant.png" onclick = "lootGet(1,3); lootGet(1,4);"> </input>
+    <input id = "slash" type = "image" src="Slash.png" onclick = fuseSlash()></input>
+    <pre id="fused"> Fused: 0 </pre>
+    <button id="reset" onclick = sinciroReset()>Reset</button>
+    <pre id = "total">Total Loot: 0</pre>
+    <div id="numbers">
+      <pre id = "unOne"></pre>
+      <pre id = "unTwo"></pre>
+      <pre id = "unThree"></pre>
+      <pre id = "unFour"></pre>
+    </div>
+    <div class = "missingList">
+    <pre id = "missing"> Missing: </pre>
+      <pre id="bladeList"> Blade </pre>
+      <pre id="necklaceList"> Necklace </pre>
+      <pre id="bootsList"> Boots </pre>
+      <pre id="gobletList"> Goblet </pre>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
